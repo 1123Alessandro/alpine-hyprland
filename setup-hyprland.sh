@@ -12,5 +12,6 @@ read -p 'Username: ' username
 adduser $username seat
 . .profile
 cp .profile ~/
+cp .local ~/.local
 apk add hyprland kitty wofi thunar xwayland
 export hpr="dbus-run-session Hyprland"
