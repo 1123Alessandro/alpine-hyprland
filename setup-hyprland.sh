@@ -8,6 +8,8 @@ rc-update add seatd
 rc-update add polkit
 rc-service seatd start
 rc-service polkit start
+read -p 'Username: ' username
+adduser $username seat
 . .profile
 cp .profile ~/
 apk add hyprland kitty wofi thunar xwayland
